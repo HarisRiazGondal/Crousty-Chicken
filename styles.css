@@ -832,3 +832,22 @@ h1 span::before { display: none; }
 @media (prefers-reduced-motion: reduce) {
   .menu-card, .menu-filter { transition: none; }
 }
+
+/* Let the food photography carry the full cobalt hero panel on larger screens. */
+@media (min-width: 761px) {
+  .hero-food {
+    inset: 0 0 0 43%;
+    min-height: 0;
+    margin: 0;
+    clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%);
+  }
+  .hero-food img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 38% center;
+    filter: none;
+    transform: none;
+  }
+}
