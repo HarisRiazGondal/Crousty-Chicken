@@ -1,0 +1,13 @@
+# Vercel local project settings
+.vercel/
+
+# Dependencies and local debug output
+node_modules/
+npm-debug.log*
+
+# Operating system metadata
+.DS_Store
+Thumbs.db
+
+# Unused full-resolution conversion source; the site uses kreamy-shakes.jpg
+/assets/kreamy-shakes.png

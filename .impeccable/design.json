@@ -1,0 +1,121 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-30T18:53:02+05:00",
+  "title": "Design System: Crousty Chicken",
+  "extensions": {
+    "typographyMeta": {
+      "display": {
+        "displayName": "Counter Sign",
+        "purpose": "Bold condensed headlines and short menu names."
+      },
+      "body": {
+        "displayName": "Menu Copy",
+        "purpose": "Readable descriptions, directions, and actions."
+      }
+    },
+    "shadows": [
+      {
+        "name": "menu-surface",
+        "value": "0 17px 36px rgb(31 34 31 / 11%)",
+        "purpose": "Separate featured food trays from the section background."
+      },
+      {
+        "name": "offer-callout",
+        "value": "0 4px 15px rgb(17 25 37 / 7%)",
+        "purpose": "Give the student offer teaser a small lift."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "mobile",
+        "value": "760px"
+      },
+      {
+        "name": "small-mobile",
+        "value": "380px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Order Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Cobalt action for the hero and prominent order routes.",
+      "html": "<a class=\"ds-order-primary\" href=\"#order\">ORDER ONLINE <span aria-hidden=\"true\">↗</span></a>",
+      "css": ".ds-order-primary { display: inline-flex; min-height: 52px; align-items: center; justify-content: center; gap: 14px; padding: 0 22px; background: #0757d5; color: #fff; border-radius: 2px; font: 800 13px 'DM Sans', Arial, sans-serif; text-decoration: none; transition: background .18s ease, transform .18s ease; } .ds-order-primary:hover { background: #0642ac; transform: translateY(-2px); } .ds-order-primary:focus-visible { outline: 3px solid #141512; outline-offset: 3px; }"
+    },
+    {
+      "name": "Red Order Button",
+      "kind": "button",
+      "refersTo": "button-order",
+      "description": "Red order action used in the header and contact section.",
+      "html": "<a class=\"ds-order-red\" href=\"#order\">COMMANDER <span aria-hidden=\"true\">↗</span></a>",
+      "css": ".ds-order-red { display: inline-flex; min-height: 51px; align-items: center; justify-content: center; gap: 13px; padding: 0 22px; background: #c91d17; color: #fff; border-radius: 2px; font: 800 12px 'DM Sans', Arial, sans-serif; text-decoration: none; transition: background .18s ease, transform .18s ease; } .ds-order-red:hover { background: #a91813; transform: translateY(-2px); } .ds-order-red:focus-visible { outline: 3px solid #141512; outline-offset: 3px; }"
+    },
+    {
+      "name": "Menu Navigation",
+      "kind": "nav",
+      "description": "Direct links with a simple underline state.",
+      "html": "<nav class=\"ds-main-nav\" aria-label=\"Menu principal\"><a href=\"#menu\">Menu</a><a href=\"#contact\">Contact</a></nav>",
+      "css": ".ds-main-nav { display: flex; flex-wrap: wrap; gap: 22px; } .ds-main-nav a { padding: 8px 0; color: #0642ac; font: 700 13px 'DM Sans', Arial, sans-serif; text-decoration: none; border-bottom: 2px solid transparent; } .ds-main-nav a:hover, .ds-main-nav a:focus-visible { border-bottom-color: #c91d17; } .ds-main-nav a:focus-visible { outline: 2px solid #141512; outline-offset: 3px; }"
+    },
+    {
+      "name": "Featured Tray Tile",
+      "kind": "card",
+      "refersTo": "menu-tray-feature",
+      "description": "Rectangular, image-led food tile with a cobalt copy panel.",
+      "html": "<article class=\"ds-tray-tile\"><img src=\"tray.jpg\" alt=\"Crispy chicken tray\"><div><h3>SAUCE BLANCHE</h3><p>Rice, crispy chicken, house sauce.</p></div></article>",
+      "css": ".ds-tray-tile { overflow: hidden; background: #0757d5; color: #fff; box-shadow: 0 17px 36px rgb(31 34 31 / 11%); } .ds-tray-tile img { display: block; width: 100%; aspect-ratio: 1.35; object-fit: cover; } .ds-tray-tile div { padding: 20px 24px; } .ds-tray-tile h3 { margin: 0; font: 800 30px/.98 'Barlow Condensed', Impact, sans-serif; } .ds-tray-tile p { margin: 10px 0 0; font: 500 14px/1.6 'DM Sans', Arial, sans-serif; }"
+    },
+    {
+      "name": "Student Offer Teaser",
+      "kind": "custom",
+      "description": "Compact paper callout linking to current student offer details.",
+      "html": "<a class=\"ds-student-teaser\" href=\"#etudiants\"><span aria-hidden=\"true\">✳</span><b>ÉTUDIANT·E ?</b> Des offres sont disponibles ! <span aria-hidden=\"true\">↗</span></a>",
+      "css": ".ds-student-teaser { display: inline-flex; flex-wrap: wrap; align-items: center; gap: 9px; padding: 9px 12px; border: 1px solid #d9d2bd; border-top: 2px solid #c91d17; background: #fffdf5; color: #141512; box-shadow: 0 4px 15px rgb(17 25 37 / 7%); font: 600 11px/1.45 'DM Sans', Arial, sans-serif; text-decoration: none; } .ds-student-teaser > span:first-child { display: grid; width: 28px; height: 28px; place-items: center; background: #0757d5; color: white; font-size: 16px; } .ds-student-teaser b { font-weight: 800; } .ds-student-teaser:focus-visible { outline: 3px solid #141512; outline-offset: 3px; }"
+    },
+    {
+      "name": "Dual Menu Price",
+      "kind": "custom",
+      "description": "Displays the confirmed in-store price beside the current Uber Eats price on every Crousty recipe.",
+      "html": "<div class=\"ds-menu-prices\" aria-label=\"8 euros in store and 11 euros 70 on Uber Eats\"><div><strong>8,00 €</strong><span>EN BOUTIQUE</span></div><div><strong>11,70 €</strong><span>UBER EATS</span></div></div>",
+      "css": ".ds-menu-prices { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; margin-top: 13px; } .ds-menu-prices > div { display: grid; gap: 3px; padding-top: 8px; border-top: 1px solid currentColor; } .ds-menu-prices strong { font: 900 26px/1 'Barlow Condensed', Impact, sans-serif; white-space: nowrap; } .ds-menu-prices span { font: 800 8px/1.2 'DM Sans', Arial, sans-serif; letter-spacing: .055em; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The La Louvière counter",
+    "overview": "A casual local restaurant site built around the Crousty Chicken identity, rectangular tray imagery, and clear menu, location, and order routes. Cream and cobalt carry the page while red and yellow punctuate choices. The design avoids generic fast-food templates and keeps mobile copy separate from busy photography.",
+    "keyCharacteristics": [
+      "Cobalt-and-cream fields with red and yellow accents",
+      "Condensed display headlines paired with DM Sans reading text",
+      "Rectangular food trays and straightforward ordering actions",
+      "Mobile hero text above the photo for clear reading"
+    ],
+    "rules": [
+      {
+        "name": "The Clear Copy Rule",
+        "body": "Keep body text on a solid, high-contrast surface; do not place paragraphs or actions over busy food photography.",
+        "section": "colors"
+      },
+      {
+        "name": "The Small Lift Rule",
+        "body": "Use shadows only where a control or food panel needs separation; the page itself stays flat.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do keep menu, directions, phone, and order links easy to find on small screens.",
+      "Do use the restaurant's real logo and rectangular tray imagery.",
+      "Do keep text and controls on a solid surface with clear contrast.",
+      "Do preserve the friendly local tone and only publish confirmed menu and offer details."
+    ],
+    "donts": [
+      "Don't use a generic fast-food template or copy that could describe any restaurant.",
+      "Don't layer mobile hero text or buttons over busy food photography.",
+      "Don't make up prices, opening hours, ingredients, allergens, or student-offer conditions.",
+      "Don't blur online prices with the identical in-store price used across Crousty recipes.",
+      "Don't turn rectangular tray imagery into generic round-bowl product art."
+    ]
+  }
+}

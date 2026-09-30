@@ -90,7 +90,7 @@
         </div>
 
         <div class="hero-food">
-          <img class="hero-photo" src="assets/crousty-hero.jpg" alt="Barquette de riz et poulet croustillant avec sauce maison, entourée de piment vert et d’herbes fraîches" fetchpriority="high" width="1536" height="1024" />
+          <img class="hero-photo" src="assets/crousty-hero-new.png" alt="Barquette Crousty au riz et au poulet croustillant nappé de sauce blanche, avec piment vert et herbes" fetchpriority="high" width="1672" height="941" />
         </div>
         <div class="hero-index" aria-hidden="true">01 <span></span> CROUSTY CHICKEN</div>
       </section>
@@ -98,97 +98,114 @@
       <section class="menu-section" id="menu" aria-labelledby="menu-title">
         <div class="menu-heading">
           <div>
-            <p class="section-note">LE MENU</p>
-            <h2 id="menu-title">Choisis ta <span>sauce.</span></h2>
+            <p class="section-note">À LA CARTE · LA LOUVIÈRE</p>
+            <h2 id="menu-title">Toute la carte,<br /><span>à ta façon.</span></h2>
           </div>
-          <p>La même bonne base dans une barquette généreuse. À toi de choisir le caractère.</p>
+          <p>Barquettes Crousty, milkshakes, desserts Kreamy’s et petits extras : retrouve tout ici avant de commander.</p>
         </div>
 
-        <div class="menu-grid">
-          <article class="menu-card menu-card-featured">
+        <div class="menu-filters" role="group" aria-label="Filtrer les catégories du menu">
+          <button class="menu-filter is-active" type="button" data-menu-filter="all" aria-pressed="true">Tout le menu</button>
+          <button class="menu-filter" type="button" data-menu-filter="crousty" aria-pressed="false">Crousty</button>
+          <button class="menu-filter" type="button" data-menu-filter="shakes" aria-pressed="false">Milkshakes</button>
+          <button class="menu-filter" type="button" data-menu-filter="desserts" aria-pressed="false">Desserts</button>
+          <button class="menu-filter" type="button" data-menu-filter="extras" aria-pressed="false">Extras</button>
+        </div>
+
+        <div class="menu-grid" id="menu-items">
+          <article class="menu-card menu-card-featured" data-menu-category="crousty">
             <div class="menu-photo">
               <img src="assets/crousty-blanche.jpg" alt="Barquette rectangulaire de riz et poulet croustillant avec sauce blanche maison" width="1536" height="1024" loading="lazy" />
               <span class="menu-photo-label">LA SIGNATURE</span>
             </div>
             <div class="menu-card-copy">
               <div class="menu-card-title-row"><span class="menu-number">01</span><h3>Crousty<br />Sauce Blanche Maison</h3></div>
+              <div class="menu-price-duo" aria-label="Prix : 8 euros en boutique et 11 euros 70 sur Uber Eats">
+                <div class="menu-price-option menu-price-store"><strong>8,00 €</strong><span>EN BOUTIQUE</span></div>
+                <div class="menu-price-option menu-price-online"><strong>11,70 €</strong><span>UBER EATS</span></div>
+              </div>
               <p>Riz, filet de poulet pané, sauce blanche maison et oignons frits.</p>
-              <a href="https://www.ubereats.com/be/store/crousty-chicken/nNn93Tj7WziuRHrTSm2PrA" target="_blank" rel="noreferrer">Commander ce crousty <span aria-hidden="true">↗</span></a>
+              <a href="https://www.ubereats.com/be/store/crousty-chicken/nNn93Tj7WziuRHrTSm2PrA" target="_blank" rel="noreferrer">Commander ce Crousty <span aria-hidden="true">↗</span></a>
             </div>
           </article>
 
-          <article class="menu-card menu-card-curry">
+          <article class="menu-card menu-card-curry" data-menu-category="crousty">
             <div class="menu-photo">
               <img src="assets/crousty-curry.jpg" alt="Barquette rectangulaire de riz et poulet croustillant nappée de sauce curry" width="1536" height="1024" loading="lazy" />
               <span class="menu-photo-label">DOUCEUR ÉPICÉE</span>
             </div>
             <div class="menu-card-copy">
               <div class="menu-card-title-row"><span class="menu-number">02</span><h3>Crousty Curry</h3></div>
+              <div class="menu-price-duo" aria-label="Prix : 8 euros en boutique et 11 euros 70 sur Uber Eats">
+                <div class="menu-price-option menu-price-store"><strong>8,00 €</strong><span>EN BOUTIQUE</span></div>
+                <div class="menu-price-option menu-price-online"><strong>11,70 €</strong><span>UBER EATS</span></div>
+              </div>
               <p>Riz, filet de poulet pané, sauce curry et oignons frits.</p>
-              <a href="https://www.ubereats.com/be/store/crousty-chicken/nNn93Tj7WziuRHrTSm2PrA" target="_blank" rel="noreferrer">Commander ce crousty <span aria-hidden="true">↗</span></a>
+              <a href="https://www.ubereats.com/be/store/crousty-chicken/nNn93Tj7WziuRHrTSm2PrA" target="_blank" rel="noreferrer">Commander ce Crousty <span aria-hidden="true">↗</span></a>
             </div>
           </article>
 
-          <article class="menu-card menu-card-mixte">
+          <article class="menu-card menu-card-mixte" data-menu-category="crousty">
             <div class="menu-photo">
               <img src="assets/crousty-mixte.jpg" alt="Barquette rectangulaire de riz et poulet croustillant avec sauces blanche, curry et sweet chili" width="1536" height="1024" loading="lazy" />
               <span class="menu-photo-label">TOUT EN UN</span>
             </div>
             <div class="menu-card-copy">
               <div class="menu-card-title-row"><span class="menu-number">03</span><h3>Crousty Mixte</h3></div>
+              <div class="menu-price-duo" aria-label="Prix : 8 euros en boutique et 11 euros 70 sur Uber Eats">
+                <div class="menu-price-option menu-price-store"><strong>8,00 €</strong><span>EN BOUTIQUE</span></div>
+                <div class="menu-price-option menu-price-online"><strong>11,70 €</strong><span>UBER EATS</span></div>
+              </div>
               <p>Sweet chili thaï, sauce blanche maison, curry et oignons frits.</p>
-              <a href="https://www.ubereats.com/be/store/crousty-chicken/nNn93Tj7WziuRHrTSm2PrA" target="_blank" rel="noreferrer">Commander ce crousty <span aria-hidden="true">↗</span></a>
+              <a href="https://www.ubereats.com/be/store/crousty-chicken/nNn93Tj7WziuRHrTSm2PrA" target="_blank" rel="noreferrer">Commander ce Crousty <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+          <article class="menu-card menu-card-collection menu-card-shakes" data-menu-category="shakes" id="shakes">
+            <div class="menu-photo">
+              <img src="assets/kreamy-shakes.jpg" alt="Trois milkshakes Kreamy aux couleurs mangue, fraise et fruits rouges, entourés de fruits frais" width="1536" height="1024" loading="lazy" />
+              <span class="menu-photo-label">FRAIS · CRÉMEUX · KREAMY</span>
+            </div>
+            <div class="menu-card-copy">
+              <div class="menu-card-title-row"><span class="menu-number">04</span><h3>Milkshakes</h3></div>
+              <p>Trois parfums à retrouver à la carte.</p>
+              <ul class="menu-flavour-list"><li>Strawberry</li><li>Mango</li><li>Magic Red</li></ul>
+              <a href="https://www.ubereats.com/be/store/crousty-chicken/nNn93Tj7WziuRHrTSm2PrA" target="_blank" rel="noreferrer">Voir les boissons <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+
+          <article class="menu-card menu-card-collection menu-card-desserts" data-menu-category="desserts" id="kreamys">
+            <div class="menu-photo">
+              <img src="assets/kreamys-desserts.jpg" alt="Desserts Kreamy's en canette : Tropical Island, Magic Red, Pistachoise et Choco Bomb" width="1664" height="1024" loading="lazy" />
+              <span class="menu-photo-label">LE DESSERT EN CANETTE</span>
+            </div>
+            <div class="menu-card-copy">
+              <div class="menu-card-title-row"><span class="menu-number">05</span><h3>Kreamy’s</h3></div>
+              <p>Quatre recettes à choisir selon tes envies.</p>
+              <ul class="menu-flavour-list menu-flavour-list-desserts"><li>Tropical Island</li><li>Magic Red</li><li>Pistachoise</li><li>Choco Bomb</li></ul>
+              <div class="menu-online-price"><strong>4,00 €</strong><span>LA CANETTE · EN LIGNE</span></div>
+              <a href="https://www.ubereats.com/be/store/crousty-chicken/nNn93Tj7WziuRHrTSm2PrA" target="_blank" rel="noreferrer">Voir les desserts <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+
+          <article class="menu-card menu-card-extras" data-menu-category="extras">
+            <div class="extra-sign" aria-hidden="true"><span>+</span><b>À CÔTÉ</b></div>
+            <div class="menu-card-copy">
+              <div class="menu-card-title-row"><span class="menu-number">06</span><h3>Extras &amp; garnitures</h3></div>
+              <p>Les petits plus autour de ton Crousty.</p>
+              <ul class="menu-extra-list">
+                <li><span>Oignons frits · persil</span></li>
+                <li><span>Sauce supplémentaire</span><strong>+1,00 €</strong></li>
+                <li><span>Poulet supplémentaire</span><strong>+1,50 €</strong></li>
+              </ul>
+              <a href="https://www.ubereats.com/be/store/crousty-chicken/nNn93Tj7WziuRHrTSm2PrA" target="_blank" rel="noreferrer">Voir toute la carte <span aria-hidden="true">↗</span></a>
             </div>
           </article>
         </div>
 
-        <div class="menu-extras">
-          <div class="extra-icon" aria-hidden="true">✳</div>
-          <div class="extra-copy"><span>À CÔTÉ DE TON CROUSTY</span><h3>Onion rings</h3><p>Rondelles d’oignon croustillantes, servies avec ketchup.</p></div>
-          <div class="extra-drinks"><span>POUR BOIRE</span><strong>Milkshakes · 3 parfums</strong></div>
-          <a class="extra-order" href="https://www.ubereats.com/be/store/crousty-chicken/nNn93Tj7WziuRHrTSm2PrA" target="_blank" rel="noreferrer" aria-label="Voir les accompagnements et boissons sur Uber Eats">↗</a>
+        <div class="menu-bottomline">
+          <p class="menu-price-note">Prix boutique commun aux trois Crousty : 8,00 €. Uber Eats affiche actuellement 11,70 € par recette ; ses tarifs peuvent évoluer, vérifie le prix dans l’application au moment de commander.</p>
+          <a class="menu-see-all" href="https://www.ubereats.com/be/store/crousty-chicken/nNn93Tj7WziuRHrTSm2PrA" target="_blank" rel="noreferrer">Commander toute la carte <span aria-hidden="true">↗</span></a>
         </div>
-        <p class="menu-price-note">Carte, prix et disponibilité à jour sur Uber Eats.</p>
-      </section>
-
-      <section class="shake-section" id="shakes" aria-labelledby="shake-title">
-        <div class="shake-photo-wrap">
-          <img src="assets/kreamy-shakes.jpg" alt="Milkshakes aux parfums mangue, fraise et fruits rouges, avec des fruits frais" width="1536" height="1024" loading="lazy" />
-          <span class="shake-photo-note">FRAIS · CRÉMEUX · KREAMY</span>
-          <span class="shake-splash shake-splash-one" aria-hidden="true">✳</span>
-          <span class="shake-splash shake-splash-two" aria-hidden="true">✳</span>
-        </div>
-        <div class="shake-copy">
-          <p class="shake-kicker">UNE GORGÉE DE DOUCEUR</p>
-          <h2 id="shake-title">Fais place<br />au <span>Kreamy.</span></h2>
-          <p class="shake-description">Trois parfums à retrouver à la carte. Choisis ton préféré, puis vérifie les parfums disponibles aujourd’hui.</p>
-          <ul class="shake-flavours" aria-label="Parfums de milkshakes Kreamy">
-            <li><span>01</span> Strawberry</li>
-            <li><span>02</span> Mango</li>
-            <li><span>03</span> Magic Red</li>
-          </ul>
-          <a class="shake-order" href="https://www.ubereats.com/be/store/crousty-chicken/nNn93Tj7WziuRHrTSm2PrA" target="_blank" rel="noreferrer">Voir les boissons sur Uber Eats <span aria-hidden="true">↗</span></a>
-        </div>
-      </section>
-
-      <section class="kreamy-section" id="kreamys" aria-labelledby="kreamy-title">
-        <div class="kreamy-copy">
-          <p class="kreamy-kicker">LE DESSERT EN CANETTE</p>
-          <h2 id="kreamy-title">Garde une<br />place pour<br /><span>Kreamy's.</span></h2>
-          <p class="kreamy-description">Une douceur à emporter après ton Crousty. Choisis ta saveur préférée.</p>
-          <ul class="kreamy-flavours" aria-label="Desserts Kreamy's disponibles">
-            <li><span>01</span><strong>Tropical Island</strong><b>4,00 €</b></li>
-            <li><span>02</span><strong>Magic Red</strong><b>4,00 €</b></li>
-            <li><span>03</span><strong>Pistachoise</strong><b>4,00 €</b></li>
-            <li><span>04</span><strong>Choco Bomb</strong><b>4,00 €</b></li>
-          </ul>
-          <p class="kreamy-note">Disponibilité selon le jour. Vérifie la carte sur Uber Eats.</p>
-          <a class="kreamy-order" href="https://www.ubereats.com/be/store/crousty-chicken/nNn93Tj7WziuRHrTSm2PrA" target="_blank" rel="noreferrer">Voir les desserts <span aria-hidden="true">↗</span></a>
-        </div>
-        <figure class="kreamy-image">
-          <img src="assets/kreamys-desserts.jpg" alt="Quatre desserts Kreamy's en canette, aux couleurs tropicale, fruits rouges, pistache et chocolat" width="1664" height="1024" loading="lazy" />
-          <figcaption>4 SAVEURS · 4,00 € CHACUNE</figcaption>
-        </figure>
       </section>
 
       <section class="about-section" id="about" aria-labelledby="about-title">
@@ -256,8 +273,12 @@
             <p>La carte présente Tropical Island, Magic Red, Pistachoise et Choco Bomb à 4,00 € chacun. La disponibilité peut changer : vérifie la carte Uber Eats avant de commander.</p>
           </details>
           <details>
-            <summary>Quels sont vos horaires et les prix du menu ?</summary>
-            <p>Les horaires, prix et disponibilités peuvent évoluer. Consulte <a href="https://maps.app.goo.gl/RA6DLxWJfDSzCFTd6" target="_blank" rel="noreferrer">la fiche Google Maps</a> ou le <a href="https://www.ubereats.com/be/store/crousty-chicken/nNn93Tj7WziuRHrTSm2PrA" target="_blank" rel="noreferrer">menu Uber Eats</a> avant de te déplacer.</p>
+            <summary>Quels sont vos horaires ?</summary>
+            <p>Les horaires peuvent évoluer. Consulte <a href="https://maps.app.goo.gl/RA6DLxWJfDSzCFTd6" target="_blank" rel="noreferrer">la fiche Google Maps</a> avant de te déplacer.</p>
+          </details>
+          <details>
+            <summary>Les prix affichés sont-ils les mêmes en boutique ?</summary>
+            <p>En boutique, les trois recettes Crousty coûtent 8,00 €. Uber Eats affiche actuellement 11,70 € par recette. Les tarifs en ligne peuvent évoluer ; vérifie le prix dans l’application avant de commander.</p>
           </details>
           <details>
             <summary>Où commander ou venir chercher ma commande ?</summary>

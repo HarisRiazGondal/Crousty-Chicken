@@ -129,6 +129,14 @@ Depth is restrained. The page mostly separates regions with bold color blocks an
 - **Background:** Use cream or paper for light content, and a brand color for featured dishes.
 - **Shadow Strategy:** Follow the small-lift rule; menu tile shadow is the stronger structural shadow.
 - **Internal Padding:** About 20–30px for menu copy.
+- **Price labels:** Show in-store and Uber Eats amounts side by side on every Crousty tray, with each source named. Keep online extras grouped and note that Uber Eats prices can change.
+
+### Menu Browsing
+- Place the complete menu directly after the hero so visitors can choose before scrolling into brand and location content.
+- Use compact, horizontally scrollable category buttons on phones and a three-column product grid on wide screens.
+- Keep the categories filterable by Crousty, milkshakes, desserts, and extras. The selected filter uses a solid cobalt fill; all filters remain keyboard operable.
+- Group flavours that share one supplied photograph rather than repeating the same image across multiple products.
+- On phones, stack each tray image above its copy to keep product names, prices, and order links readable.
 
 ### Navigation
 - **Desktop:** Horizontal DM Sans links on cream, with a thin red or blue underline on hover and focus.

@@ -19,7 +19,19 @@ The Crousty meals are served in rectangular takeaway trays with rice, breaded ch
 - **Crousty Sauce Blanche Maison:** rice, breaded chicken, house white sauce, and fried onions.
 - **Crousty Curry:** rice, breaded chicken, curry sauce, and fried onions.
 - **Crousty Mixte:** rice, breaded chicken, house white sauce, curry, sweet chili sauce, and fried onions.
-- **Onion rings:** a listed side; check the live ordering menu for current availability and serving details.
+- Fried onions and parsley are shown as the Crousty garnish on the supplied menu artwork.
+
+## Prices shown on the website
+
+The restaurant owner confirmed the same **in-store price** for all three Crousty recipes. Uber Eats currently lists the following **online menu prices**:
+
+- **Crousty Sauce Blanche Maison:** €8.00 in store; €11.70 on Uber Eats.
+- **Crousty Curry:** €8.00 in store; €11.70 on Uber Eats.
+- **Crousty Mixte:** €8.00 in store; €11.70 on Uber Eats.
+- **Extra sauce:** €1.00 online.
+- **Extra chicken:** €1.50 online.
+
+Prices and availability can change. Check the Uber Eats listing for current online prices before ordering.
 
 Food photography on the website is illustrative. It is not a guarantee of exact portion size, plating, or packaging.
 
