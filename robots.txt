@@ -1,0 +1,3 @@
+# Public restaurant pages and assets are open to compliant crawlers.
+User-agent: *
+Allow: /
